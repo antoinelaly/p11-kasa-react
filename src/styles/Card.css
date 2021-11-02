@@ -18,3 +18,7 @@
 .letitre a {
 	text-decoration: none;
 }
+
+.letitre h4 {
+	width: 50%;
+}

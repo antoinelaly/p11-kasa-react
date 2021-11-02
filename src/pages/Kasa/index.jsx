@@ -17,7 +17,7 @@ const Banner = styled.div`
 	align-items: center;
   margin-bottom: 43px;
   @media (max-width: 767px) {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 `
 
@@ -38,28 +38,28 @@ const CardsContainer = styled.div`
 }
 `
 
-function Home() {
+function Kasa() {
   return (
     <div className="container">
-      <Banner>
-				<div className="layer">
-				<h1 className='h1bandeau'>Chez vous, partout et ailleurs</h1>
-        </div>
-			</Banner>
-      <CardsContainer>
-        {logements.map((profile) => (
-          <Link key={`kasa-${profile.id}`} to={`/logement/${profile.id}`}>
-            <Card 
-              key={profile.id}
-              label={profile.location}
-              title={profile.title}
-              cover={profile.cover}
-            />
-          </Link>
-        ))}
-      </CardsContainer>
-    </div>
+    <Banner>
+      <div className="layer">
+      <h1 className='h1bandeau'>Chez vous, partout et ailleurs</h1>
+      </div>
+    </Banner>
+    <CardsContainer>
+      {logements.map((profile) => (
+        <Link key={`kasa-${profile.id}`} to={`/logement/${profile.id}`}>
+          <Card 
+            key={profile.id}
+            label={profile.location}
+            title={profile.title}
+            cover={profile.cover}
+          />
+        </Link>
+      ))}
+    </CardsContainer>
+  </div>
   )
 }
 
-export default Home
+export default Kasa

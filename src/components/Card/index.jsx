@@ -13,8 +13,8 @@ const CardLabel = styled.span`
   font-weight: normal;
   padding-left: 15px;
   position: relative;
-  top: -50px;
-  height:60px;
+  top: -80px;
+  height:80px;
   text-decoration: none;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   border-radius: 10px;
@@ -43,8 +43,8 @@ const CardWrapper = styled.div`
     cursor: pointer;
   }
   @media (max-width: 767px) {
-    width: 380px;
-    margin: 0 16px;
+    width: 100%;
+    margin: 0;
 }
 `
 
@@ -62,7 +62,7 @@ class Card extends Component {
     return (
       <CardWrapper >
           <CardImage src={cover} alt="Logement" />
-          <CardLabel className='letitre'>{label}</CardLabel>
+          <CardLabel className='letitre'><h4>{label}</h4></CardLabel>
       </CardWrapper>
     )
   }
