@@ -25,7 +25,7 @@ ReactDOM.render(
       <GlobalStyle />
       <Header />
       <Switch>
-        <Route exact path="/p11-kasa-react">
+        <Route exact path="/">
           <Home />
         </Route>
         <Route path="/apropos">

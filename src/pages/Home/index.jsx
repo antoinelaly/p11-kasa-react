@@ -35,6 +35,7 @@ const CardsContainer = styled.div`
   text-decoration: none;
   @media (max-width: 767px) {
     background: #fff;
+    padding: 0 20px;
 }
 `
 
