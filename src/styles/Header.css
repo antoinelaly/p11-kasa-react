@@ -1,0 +1,17 @@
+.normal {
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 30px;
+  }
+  nav .active {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 767px) {
+    .lemenu { padding-left: 25px; }
+    .normal {
+        font-size: 12px;
+        padding-left: 15px;
+      }
+}

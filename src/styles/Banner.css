@@ -1,0 +1,24 @@
+.h1bandeau {
+	position: relative;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	top: 40%;
+}
+.layer {
+	background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	border-radius: 25px;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .h1bandeau {font-size: 24px;padding-right: 30%;padding-left: 10%;}
+}

@@ -1,0 +1,20 @@
+.lmj-cart {
+	color: white;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), #FF6060 );
+	height: 300px;
+}
+
+.lmj-cart img {
+	object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.lmj-cart span {
+	position: absolute;
+	
+}
+
+.letitre a {
+	text-decoration: none;
+}

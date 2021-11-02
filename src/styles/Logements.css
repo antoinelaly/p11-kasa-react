@@ -1,0 +1,247 @@
+.slider {
+    max-width: 1240px;
+    height: 415px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.slider  .limage {
+	height: 415px;
+	border-radius: 10px;
+	z-index: 10;
+    background-position: center;
+    border-radius: 25px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 1240px;
+    margin: auto;
+  }
+  
+  .right-arrow {
+	position: absolute;
+	top: 40%;
+	right: 180px;
+	font-size: 20px;
+	color: #fff;
+	z-index: 10;
+	cursor: pointer;
+	user-select: none;
+  }
+  
+  .left-arrow {
+	position: absolute;
+	top: 40%;
+	left: 180px;
+	font-size: 20px;
+	color: #fff;
+	z-index: 10;
+	cursor: pointer;
+	user-select: none;
+  }
+  
+  .slide {
+	opacity: 0;
+	transition-duration: 1s ease;
+	width: 1240px;
+    margin: auto;
+  }
+  
+  .slide.active {
+	opacity: 1;
+	transition-duration: 1s;
+	transform: scale(1);
+	display: flex;
+    align-items: center;
+  width: 100%;
+    margin: auto;
+  }
+  .slide.active .each-img {
+    height: 415px;
+    z-index: 10;
+    background-position: center;
+    border-radius: 25px;
+	width: 1240px;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+  .slide.active { width: 90%; }
+  .right-arrow {right: 40px;font-size: 10px;}
+  .left-arrow  {left: 40px;font-size: 10px;}
+  }
+
+.slide span {
+    display:table;
+    margin:0 auto;
+    padding-top: 360px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.content-container {
+  max-width: 1240px;
+  color: #FF6060;
+  display: flex;
+  margin: 1.67em auto;
+}
+
+.content-container  .right-container {
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 2em;
+}
+.content-container h1 {
+  font-size: 36px;
+}
+.lestags, .theface {
+  display: flex;
+}
+.theface h3 {
+  max-width: 50%;
+  margin-left: auto;
+  text-align : right;
+  padding-right: 10%;
+}
+.each-tags {
+  color: #fff;
+  background-color: #FF6060;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.face-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.lesetoiles {
+  position: relative;
+  margin-top: 10px;
+}
+.etoilesr {
+  position: absolute;
+  top: -1px;
+}
+.ch-etoile {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.content-desc {
+  padding-right: 20px;
+  width: 100%;
+}
+
+.content-equi {
+  padding-left: 20px;
+  width: 100%;
+}
+
+.content-desc .title, .content-equi .title {
+  color: #fff;
+  background-color: #FF6060;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.each-equi {
+  list-style: none;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .content-container { display: block;padding: 0 30px;}
+  .content-desc, .content-equi { width: 100%; }
+  .right-container { display: flex;flex-direction: row-reverse; }
+  .ch-etoile {
+    width: 15px;
+    height: 15px;
+    margin: 2.5px;
+  }
+  .face-img {
+    width: 32px;
+    height: 32px;
+  }
+  .lesetoiles {
+    width: 50%;
+  }
+  .theface h3 {
+    margin-top: 0;
+  }
+  .content-equi {
+    padding-left: 0;
+  }
+}
+
+input {
+  display: none;
+}
+
+
+/* Accordion styles */
+.tabs {
+  overflow: hidden;
+}
+
+.tab {
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #FF6060;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+/*.tab-label:hover {
+  background: #FF6060;
+}*/
+.tab-label::after {
+  content: "❯";
+  transform: rotate(-90deg);
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  transition: all 0.15s;
+  font-size: 25px;
+}
+.tab-content {
+  /*max-height: 0;*/
+  padding: 0 1em;
+  color: #FF6060;
+  background: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #FF6060;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #FF6060;
+}
+
+input:checked + .tab-label {
+  background: #FF6060;
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  /*max-height: 100vh;*/
+  max-height: 0;
+  padding: 1em;
+}
