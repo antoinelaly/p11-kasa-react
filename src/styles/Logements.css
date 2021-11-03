@@ -68,9 +68,9 @@
   .slide.active { width: 90%; }
   .right-arrow {right: 30px;font-size: 10px;}
   .left-arrow  {left: 30px;font-size: 10px;}
-  .slide.active .each-img { height: 255px;border-radius: 10px;width: 400px;}
+  .slide.active .each-img { height: 255px;border-radius: 10px;width: 100%;}
   .right-arrow,   .left-arrow { top: 30%; }
-  .slider, .slide { height: 100%;width: 400px; }
+  .slider, .slide { height: 100%;width: 100%; }
   }
 
 .slide span {
