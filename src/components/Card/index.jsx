@@ -19,6 +19,9 @@ const CardLabel = styled.span`
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   border-radius: 10px;
   z-index:20;
+  @media (max-width: 767px) {
+    width: 320px;
+}
 `
 
 const CardImage = styled.img`
@@ -44,7 +47,7 @@ const CardWrapper = styled.div`
   }
   @media (max-width: 767px) {
     width: 100%;
-    margin: 0;
+    margin: 20px 0;
 }
 `
 
