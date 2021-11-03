@@ -20,7 +20,7 @@ const CardLabel = styled.span`
   border-radius: 10px;
   z-index:20;
   @media (max-width: 767px) {
-    width: 320px;
+    width: 300px;
 }
 `
 
