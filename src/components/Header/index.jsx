@@ -21,7 +21,7 @@ const NavContainer = styled.nav`
   align-items: center;
   max-width: 1240px;
   margin: 0 auto;
-
+  text-transform: uppercase;
 `
 
 function Header() {
