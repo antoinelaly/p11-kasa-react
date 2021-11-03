@@ -47,7 +47,7 @@ const CardWrapper = styled.div`
   }
   @media (max-width: 767px) {
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 `
 
