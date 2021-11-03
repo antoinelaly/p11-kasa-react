@@ -10,7 +10,7 @@ const HomeLogo = styled.img`
   color: #FF6060;
   @media (max-width: 767px) {
     height: 45px;
-    width: 130px;
+    width: 125px;
 }
 `
 
