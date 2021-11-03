@@ -66,8 +66,8 @@
 
 @media (max-width: 767px) {
   .slide.active { width: 90%; }
-  .right-arrow {right: 40px;font-size: 10px;}
-  .left-arrow  {left: 40px;font-size: 10px;}
+  .right-arrow {right: 30px;font-size: 10px;}
+  .left-arrow  {left: 30px;font-size: 10px;}
   .slide.active .each-img { height: 255px;border-radius: 10px;}
   .right-arrow,   .left-arrow { top: 30%; }
   .slider { height: 100%; }

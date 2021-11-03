@@ -20,6 +20,7 @@ const Banner = styled.div`
   margin-bottom: 43px;
   @media (max-width: 767px) {
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 `
 
