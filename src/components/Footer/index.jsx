@@ -27,6 +27,9 @@ const RightsSubtitle = styled.h4`
   margin-left: auto;
   margin-right: auto;
   width: 12em;
+  @media (max-width: 767px) {
+    font-size: 12px;
+}
 `
 
 function Footer() {

@@ -18,6 +18,7 @@ const Banner = styled.div`
   margin-bottom: 43px;
   @media (max-width: 767px) {
     margin-bottom: 0;
+    height: 110px;
 }
 `
 
@@ -35,6 +36,7 @@ const CardsContainer = styled.div`
   text-decoration: none;
   @media (max-width: 767px) {
     background: #fff;
+    padding-top: 0;
 }
 `
 
