@@ -12,13 +12,13 @@ const CardLabel = styled.span`
   font-size: 18px;
   font-weight: normal;
   padding-left: 15px;
-  position: relative;
-  top: -80px;
-  height:80px;
+  position: absolute;
+  padding-top: 250px;
+  width: 325px;
   text-decoration: none;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   border-radius: 10px;
-  z-index:10;
+  z-index:20;
 `
 
 const CardImage = styled.img`
@@ -38,7 +38,7 @@ const CardWrapper = styled.div`
   height: 340px;
   width: 340px;
   transition: 200ms;
-  margin: 16px;
+  margin: 25px;
   &:hover {
     cursor: pointer;
   }
