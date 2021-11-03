@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { SliderData } from "../../datas/SliderData";
+//import { SliderData } from "../../datas/SliderData";
 import products from '../../datas/products.json'
 import {MdArrowBackIos, MdArrowForwardIos} from 'react-icons/md';
 import '../../styles/Logements.css'

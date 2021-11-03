@@ -68,7 +68,7 @@
   .slide.active { width: 90%; }
   .right-arrow {right: 40px;font-size: 10px;}
   .left-arrow  {left: 40px;font-size: 10px;}
-  .slide.active .each-img { height: 255px;}
+  .slide.active .each-img { height: 255px;border-radius: 10px;}
   .right-arrow,   .left-arrow { top: 30%; }
   .slider { height: 100%; }
   }
@@ -170,7 +170,7 @@
   .content-container h1 { font-size: 18px; }
   .content-container h3 { font-size: 14px; }
   .slide span {padding-top: 220px; }
-  .each-tags {font-size: 10px; }
+  .each-tags {font-size: 10px;border-radius: 5px; }
 }
 
 input {
@@ -240,7 +240,7 @@ input:checked ~ .tab-content {
   .tab-label::after {
     height: .5em; 
   }
-  .tab-label { font-size: 13px; }
+  .tab-label { font-size: 13px;border-radius: 5px; }
   .each-equi, .tab-content p  {
     font-size: 12px;
   }

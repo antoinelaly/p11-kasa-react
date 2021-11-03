@@ -19,6 +19,7 @@ const Banner = styled.div`
   @media (max-width: 767px) {
     margin-bottom: 0;
     height: 110px;
+    border-radius: 10px;
 }
 `
 
