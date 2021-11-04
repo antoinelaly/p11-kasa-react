@@ -99,6 +99,9 @@
 .lestags, .theface {
   display: flex;
 }
+.theface {
+  justify-content: flex-end;
+}
 .theface h3 {
   max-width: 50%;
   margin-left: auto;
@@ -164,7 +167,7 @@
   .right-container { display: flex;flex-direction: row-reverse; }
   .ch-etoile { width: 15px;height: 15px;margin: 2.5px;  }
   .face-img {width: 32px;height: 32px;}
-  .lesetoiles {width: 50%;}
+  .lesetoiles, .theface {width: 50%;}
   .theface h3 { margin-top: 0;font-size: 12px;font-weight: 500; }
   .content-equi { padding-left: 0; }
   .content-container h1 { font-size: 18px; }
@@ -186,6 +189,7 @@ input {
 .tab {
   color: white;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .tab-label {
   border-radius: 10px;
@@ -202,7 +206,7 @@ input {
   content: "❯";
   transform: rotate(-90deg);
   width: 1.5em;
-  height: 1.5em;
+  height: .5em;
   text-align: center;
   transition: all 0.15s;
   font-size: 25px;
@@ -212,6 +216,10 @@ input {
   color: #FF6060;
   background: #F7F7F7;
   transition: all 0.35s;
+}
+.tab-content p, .tab-content ul {
+  margin: 0;
+  padding: 1em;
 }
 .tab-close {
   display: flex;
