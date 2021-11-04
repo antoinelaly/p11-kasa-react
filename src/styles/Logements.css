@@ -201,12 +201,17 @@ input {
   cursor: pointer;
   /* Icon */
 }
-
+.tab-label h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
 .tab-label::after {
   content: "❯";
   transform: rotate(-90deg);
   width: 1.5em;
-  height: .5em;
+  height: 1.5em;
   text-align: center;
   transition: all 0.15s;
   font-size: 25px;
@@ -245,9 +250,6 @@ input:checked ~ .tab-content {
 }
 
 @media (max-width: 767px) {
-  .tab-label::after {
-    height: .5em; 
-  }
   .tab-label { font-size: 13px;border-radius: 5px; }
   .each-equi, .tab-content p  {
     font-size: 12px;

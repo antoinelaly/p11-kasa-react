@@ -67,7 +67,7 @@ const Logement = (props) => {
                 <div className="tabs content-desc">
                     <div className="tab ">
                         <input type="checkbox" id="chck1" />
-                        <label className="tab-label" for="chck1">Description</label>
+                        <label className="tab-label" for="chck1"><h3>Description</h3></label>
                         <div className="tab-content">
                         <p>{description}</p>
                         </div>
@@ -76,7 +76,7 @@ const Logement = (props) => {
                 <div className="tabs content-equi">
                     <div className="tab">
                         <input type="checkbox" id="chck2" />
-                        <label className="tab-label" for="chck2">Equipments</label>
+                        <label className="tab-label" for="chck2"><h3>Equipments</h3></label>
                         <div className="tab-content">
                         <ul>
                     {equipments.map((equipment, index)=> (
