@@ -1,6 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-//import { StyledLink } from '../../utils/style/Atoms'
 import LeLogo from '../../assets/lelogo.svg'
 import '../../styles/Header.css'
 

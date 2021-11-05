@@ -19,6 +19,15 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
     }
 `
+/*
+* Single Page Application with React Router: render some UI (user interface) when its path matches the current URL
+* Props are like function arguments, same syntax as HTML attributes
+* route declaration which allows us to access the history
+* Render Props for Cross-Cutting Concerns render={(props) => : 
+* reuse this behavior in another component
+* a render prop is a function prop that a component uses to know what to render
+* encapsulate the functionality so that we can share it between components
+*/
 
 ReactDOM.render(
   <React.StrictMode>

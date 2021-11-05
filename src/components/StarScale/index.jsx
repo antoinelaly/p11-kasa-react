@@ -1,7 +1,11 @@
-//import Sun from '../assets/sun.svg'
 import Star from '../../assets/star.svg'
 import StarG from '../../assets/star-g.svg'
 
+/* 
+* Map method: loop to iterate over the elements, transform each individual one, and push the results into a new array
+* operator ternary conditional: The condition is an expression that evaluates to a Boolean value, either true or false
+* Get the state (starValue) frome Logement component loop in range until the value and send back stars throw StarScale
+*/
 
 function StarScale({ starValue }) {
 

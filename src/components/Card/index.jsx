@@ -1,10 +1,7 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Component } from 'react'
-//import colors from '../../utils/style/colors'
 import '../../styles/Card.css'
-//import { StyledLink } from '../../utils/style/Atoms'
-//import { logementListe } from '../../datas/logementListe'
 
 
 const CardLabel = styled.span`
