@@ -59,7 +59,7 @@ const Logement = (props) => {
                         <h3>{host.name}</h3>
                         <img className="face-img" src={host.picture} alt="portrait"></img>
                     </div>
-                    <StarScale  scaleValue={rating} />
+                    <StarScale  starValue={rating} />
                 </div>
             </div>
 

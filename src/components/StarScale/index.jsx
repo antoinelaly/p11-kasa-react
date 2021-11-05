@@ -3,10 +3,10 @@ import Star from '../../assets/star.svg'
 import StarG from '../../assets/star-g.svg'
 
 
-function StarScale({ scaleValue }) {
+function StarScale({ starValue }) {
 
     const range = [1, 2, 3, 4, 5]
-    const scaleType = <img src={Star} alt='star-icon' className="ch-etoile"/>
+    const starRed = <img src={Star} alt='star-icon' className="ch-etoile"/>
     const starGrey = <img src={StarG} alt='star-icon'  className="ch-etoile"/>
 
     return (
@@ -14,7 +14,7 @@ function StarScale({ scaleValue }) {
         <div className="etoilesg">{starGrey}{starGrey}{starGrey}{starGrey}{starGrey}</div>
         <div className="etoilesr">
             {range.map((rangeElem) =>
-                scaleValue >= rangeElem ? <span key={rangeElem.toString()}>{scaleType}</span> : null
+                starValue >= rangeElem ? <span key={rangeElem.toString()}>{starRed}</span> : null
             )}
         </div>
         </div>

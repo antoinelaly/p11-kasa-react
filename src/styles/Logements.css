@@ -19,8 +19,8 @@
   
   .right-arrow {
 	position: absolute;
-	top: 40%;
-	right: 180px;
+	padding-top: 180px;
+	right: 10%;
 	font-size: 20px;
 	color: #fff;
 	z-index: 10;
@@ -30,8 +30,8 @@
   
   .left-arrow {
 	position: absolute;
-	top: 40%;
-	left: 180px;
+	padding-top: 180px;
+	left: 10%;
 	font-size: 20px;
 	color: #fff;
 	z-index: 10;
