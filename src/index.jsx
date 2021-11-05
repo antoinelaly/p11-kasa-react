@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 /*
+* createGlobalStyle
 * Single Page Application with React Router: render some UI (user interface) when its path matches the current URL
 * Props are like function arguments, same syntax as HTML attributes
 * route declaration which allows us to access the history
