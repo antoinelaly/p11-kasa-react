@@ -6,6 +6,11 @@ import '../../styles/Accordion.css';
 import { ReactComponent as ArrowLeft } from '../../assets/arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 
+/* 
+* match : {id} = props.match.params
+* find : 
+*/
+
 const Logement = (props) => {
     let {id} = props.match.params
     const logement = logements.find(logement => logement.id === id)

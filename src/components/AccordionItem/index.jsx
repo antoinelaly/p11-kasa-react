@@ -2,6 +2,10 @@ import { useRef } from "react";
 import { ReactComponent as ArrowDown } from '../../assets/arrow-down.svg';
 import { ReactComponent as ArrowUp } from '../../assets/arrow-up.svg';
 
+/*
+* 
+*/
+
 const AccordionItem = ({ faq, active, onToggle }) => {
   const { question, answer } = faq;
 

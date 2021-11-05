@@ -30,6 +30,9 @@ const RightsSubtitle = styled.h4`
     font-size: 12px;
 }
 `
+/*
+* 
+*/
 
 function Footer() {
   return (

@@ -47,6 +47,9 @@ const CardWrapper = styled.div`
     margin: 10px 0;
 }
 `
+/*
+* function / class
+*/
 
 //function Card({ label, title, cover }) {
 class Card extends Component {

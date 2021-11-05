@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
 * reuse this behavior in another component
 * a render prop is a function prop that a component uses to know what to render
 * encapsulate the functionality so that we can share it between components
+* https://en.reactjs.org/docs/render-props.html
 */
 
 ReactDOM.render(

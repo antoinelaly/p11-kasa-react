@@ -23,6 +23,10 @@ const NavContainer = styled.nav`
   text-transform: uppercase;
 `
 
+/*
+* 
+*/
+
 function Header() {
   return (
     <NavContainer>

@@ -23,6 +23,10 @@ const Banner = styled.div`
     border-radius: 10px;
 }
 `
+/*
+* useState
+* css ???
+*/
 
 function Apropos() {
   const [clicked, setClicked] = useState("0");

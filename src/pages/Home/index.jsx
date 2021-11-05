@@ -40,6 +40,9 @@ const CardsContainer = styled.div`
     padding-top: 0;
 }
 `
+/*
+* styled-components
+*/
 
 function Home() {
   return (

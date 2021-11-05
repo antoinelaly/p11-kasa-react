@@ -25,6 +25,10 @@ const ErrorSubtitle = styled.h2`
   font-size: 36px;
 `
 
+/*
+* StyledLink
+*/
+
 function Error() {
   return (
     <ErrorWrapper>
