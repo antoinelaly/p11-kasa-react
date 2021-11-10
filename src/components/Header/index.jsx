@@ -24,10 +24,6 @@ const NavContainer = styled.nav`
   text-transform: uppercase;
 `
 
-/*
-* 
-*/
-
   class Header extends Component {
     constructor(props) {
       super(props)

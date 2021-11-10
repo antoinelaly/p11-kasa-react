@@ -1,3 +1,4 @@
+import { Component } from 'react'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
 import { Link } from 'react-router-dom'
@@ -29,19 +30,26 @@ const ErrorSubtitle = styled.h2`
 * StyledLink
 */
 
-function Error() {
-  return (
-    <ErrorWrapper>
-      <ErrorTitle>404</ErrorTitle>
-      <ErrorSubtitle>
-      Oups! La page que vous demandez n'existe pas.
-      </ErrorSubtitle>
-      <Link to="/">
-      <StyledLink to="/"><h6>Retourner sur la page d’accueil</h6></StyledLink>
-        
-      </Link>
-    </ErrorWrapper>
-  )
+  class Error extends Component {
+    constructor(props) {
+      super(props)
+      this.state = {}
+    }
+  
+    render() {
+    return (
+      <ErrorWrapper>
+        <ErrorTitle>404</ErrorTitle>
+        <ErrorSubtitle>
+        Oups! La page que vous demandez n'existe pas.
+        </ErrorSubtitle>
+        <Link to="/">
+        <StyledLink to="/"><h6>Retourner sur la page d’accueil</h6></StyledLink>
+          
+        </Link>
+      </ErrorWrapper>
+    )
+  }
 }
 
 export default Error

@@ -51,7 +51,6 @@ const CardWrapper = styled.div`
 * function / class
 */
 
-//function Card({ label, cover }) {
 class Card extends Component {
   constructor(props) {
     super(props)

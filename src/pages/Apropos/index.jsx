@@ -24,17 +24,17 @@ const Banner = styled.div`
 
 /* 
 * match : {id} = props.match.params
-* find : 
+* css
 */
 
-//const Logement = (props) => {
-    class Logement extends Component {
-        constructor(props) {
-          super(props)
-          this.state = { }
-        }
-      
-        render() {
+
+class Logement extends Component {
+    constructor(props) {
+    super(props)
+    this.state = { }
+    }
+
+    render() {
 
         return (
             <div className='container'>

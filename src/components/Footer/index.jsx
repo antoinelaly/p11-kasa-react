@@ -32,9 +32,6 @@ const RightsSubtitle = styled.h4`
     font-size: 12px;
 }
 `
-/** 
-* 
-*/
 
 class Footer extends Component {
   constructor(props) {
