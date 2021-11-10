@@ -49,7 +49,7 @@ ReactDOM.render(
         <Route path="/p11-kasa-react">
           <Kasa />
         </Route>
-        <Route>
+        <Route path="*">
           <Error />
         </Route>
       </Switch>
