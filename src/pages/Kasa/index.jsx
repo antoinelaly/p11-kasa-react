@@ -1,3 +1,4 @@
+import { Component } from 'react'
 import Card from '../../components/Card'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
@@ -17,7 +18,7 @@ const Banner = styled.div`
 	align-items: center;
   margin-bottom: 43px;
   @media (max-width: 767px) {
-    margin-bottom: 0;
+    margin-bottom: 20px;
     height: 110px;
     border-radius: 10px;
 }
@@ -40,29 +41,40 @@ const CardsContainer = styled.div`
     padding-top: 0;
 }
 `
+/*
+* styled-components
+*/
 
-function Kasa() {
-  return (
-    <div className="container">
-    <Banner>
-      <div className="layer">
-      <h1 className='h1bandeau'>Chez vous, partout et ailleurs</h1>
+class Kasa extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { }
+  }
+
+  render() {
+
+    return (
+      <div className="container">
+        <Banner>
+          <div className="layer">
+          <h1 className='h1bandeau'>Chez vous, partout et ailleurs</h1>
+          </div>
+        </Banner>
+        <CardsContainer>
+          {logements.map((profile) => (
+            <Link key={`kasa-${profile.id}`} to={`/logement/${profile.id}`}>
+              <Card 
+                key={profile.id}
+                label={profile.location}
+                title={profile.title}
+                cover={profile.cover}
+              />
+            </Link>
+          ))}
+        </CardsContainer>
       </div>
-    </Banner>
-    <CardsContainer>
-      {logements.map((profile) => (
-        <Link key={`kasa-${profile.id}`} to={`/logement/${profile.id}`}>
-          <Card 
-            key={profile.id}
-            label={profile.location}
-            title={profile.title}
-            cover={profile.cover}
-          />
-        </Link>
-      ))}
-    </CardsContainer>
-  </div>
-  )
+    )
+  }
 }
 
 export default Kasa

@@ -1,0 +1,48 @@
+
+.slider__slide {
+    height: 28vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    max-width: 1240px;
+    width: 100%;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+  }
+  .slider__slide[data-active="true"] {
+    opacity: 1;
+  }
+  .rightArrow {
+    padding-top: 180px;
+    left: 10%;
+    position: absolute;
+    z-index: 200;
+    transition: all 0.5s ease-in-out;
+    color: #ffffff;
+  }
+  .rightArrow:hover {
+    color: rgba(160, 192, 255, 1);
+    transform: scale(1.1);
+  }
+  .leftArrow {
+    padding-top: 180px;
+    right: 10%;
+    position: absolute;
+    z-index: 200;
+    transition: all 0.5s ease-in-out;
+    color: #ffffff;
+  }
+  .leftArrow:hover {
+    color: rgba(160, 192, 255, 0.8);
+    transform: scale(1.1);
+  }
+  #slide {
+    position: relative;
+    overflow: hidden;
+    height: 50vw;
+    padding: 0;
+  }
+
+  

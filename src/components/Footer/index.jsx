@@ -1,3 +1,5 @@
+import { Component } from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import LeLogob from '../../assets/lelogob.svg'
@@ -30,21 +32,38 @@ const RightsSubtitle = styled.h4`
     font-size: 12px;
 }
 `
-/*
+/** 
 * 
 */
 
-function Footer() {
-  return (
-    <NavContainer>
-      <Link to="/">
-        <HomeLogo src={LeLogob} />
-      </Link>
-      <div>
-        <RightsSubtitle to="/">© Kasa. All rights reserved</RightsSubtitle>
-      </div>
-    </NavContainer>
-  )
+class Footer extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  render() {
+    const { lelogob } = this.props
+
+    return (
+      <NavContainer>
+        <Link to="/">
+          <HomeLogo src={lelogob} />
+        </Link>
+        <div>
+          <RightsSubtitle to="/">© Kasa. All rights reserved</RightsSubtitle>
+        </div>
+      </NavContainer>
+    )
+  }
+}
+
+Footer.propTypes = {
+  lelogob: PropTypes.string.isRequired,
+}
+
+Footer.defaultProps = {
+  lelogob: LeLogob,
 }
 
 export default Footer

@@ -1,3 +1,4 @@
+import { Component } from 'react'
 import Card from '../../components/Card'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
@@ -44,28 +45,36 @@ const CardsContainer = styled.div`
 * styled-components
 */
 
-function Home() {
-  return (
-    <div className="container">
-      <Banner>
-				<div className="layer">
-				<h1 className='h1bandeau'>Chez vous, partout et ailleurs</h1>
-        </div>
-			</Banner>
-      <CardsContainer>
-        {logements.map((profile) => (
-          <Link key={`kasa-${profile.id}`} to={`/logement/${profile.id}`}>
-            <Card 
-              key={profile.id}
-              label={profile.location}
-              title={profile.title}
-              cover={profile.cover}
-            />
-          </Link>
-        ))}
-      </CardsContainer>
-    </div>
-  )
+class Home extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { }
+  }
+
+  render() {
+
+    return (
+      <div className="container">
+        <Banner>
+          <div className="layer">
+          <h1 className='h1bandeau'>Chez vous, partout et ailleurs</h1>
+          </div>
+        </Banner>
+        <CardsContainer>
+          {logements.map((profile) => (
+            <Link key={`kasa-${profile.id}`} to={`/logement/${profile.id}`}>
+              <Card 
+                key={profile.id}
+                label={profile.location}
+                title={profile.title}
+                cover={profile.cover}
+              />
+            </Link>
+          ))}
+        </CardsContainer>
+      </div>
+    )
+  }
 }
 
 export default Home

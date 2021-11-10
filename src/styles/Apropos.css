@@ -1,0 +1,63 @@
+
+/* Accordion  */
+.content-container-app {
+  max-width: 1240px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.content-app {
+  width: 100%;
+}
+.fiabilite, .respect, .service, .responsabilite {
+  max-height: 0;
+  padding: 10px;
+}
+
+input:checked ~ .fiabilite, input:checked ~ .respect,
+input:checked ~ .service, input:checked ~ .responsabilite {
+  padding: 0 1em;
+  color: #FF6060;
+  background: #F7F7F7;
+  transition: all 0.35s;
+  max-height: 150px;
+}
+.tab-label-app {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #FF6060;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tab-label-app h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+.content-app p {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 20px 0;
+}
+.tab-label-app::after {
+  content: "❯";
+  transform: rotate(-90deg);  
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  transition: all 0.15s;
+  font-size: 25px;
+}
+input:checked + .tab-label-app::after {
+  transform: rotate(90deg);
+}

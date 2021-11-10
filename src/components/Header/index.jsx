@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import LeLogo from '../../assets/lelogo.svg'
 import '../../styles/Header.css'
+import { Component } from 'react'
 
 const HomeLogo = styled.img`
   height: 68px;
@@ -27,18 +28,26 @@ const NavContainer = styled.nav`
 * 
 */
 
-function Header() {
-  return (
-    <NavContainer>
-      <Link to="/">
-        <HomeLogo src={LeLogo} />
-      </Link>
-      <div  className="lemenu">
-        <NavLink to="/" className="normal" activeClassName="active" exact>Accueil</NavLink>
-        <NavLink to="/apropos" className="normal" activeClassName="active" exact>A Propos</NavLink>
-      </div>
-    </NavContainer>
-  )
+  class Header extends Component {
+    constructor(props) {
+      super(props)
+      this.state = {}
+    }
+  
+    render() {
+
+    return (
+      <NavContainer>
+        <Link to="/">
+          <HomeLogo src={LeLogo} />
+        </Link>
+        <div  className="lemenu">
+          <NavLink to="/" className="normal" activeClassName="active" exact>Accueil</NavLink>
+          <NavLink to="/apropos" className="normal" activeClassName="active" exact>A Propos</NavLink>
+        </div>
+      </NavContainer>
+    )
+  }
 }
 
 export default Header

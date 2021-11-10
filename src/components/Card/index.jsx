@@ -51,7 +51,7 @@ const CardWrapper = styled.div`
 * function / class
 */
 
-//function Card({ label, title, cover }) {
+//function Card({ label, cover }) {
 class Card extends Component {
   constructor(props) {
     super(props)
@@ -73,13 +73,11 @@ class Card extends Component {
 
 Card.propTypes = {
   label: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
 }
 
 Card.defaultProps = {
   label: '',
-  title: '',
   cover: '',
 }
 
