@@ -1,20 +1,18 @@
 {
   "files": {
-    "main.css": "/p11-kasa-react/static/css/main.8066245b.chunk.css",
-    "main.js": "/p11-kasa-react/static/js/main.8f71b31c.chunk.js",
-    "main.js.map": "/p11-kasa-react/static/js/main.8f71b31c.chunk.js.map",
+    "main.css": "/p11-kasa-react/static/css/main.7afae875.chunk.css",
+    "main.js": "/p11-kasa-react/static/js/main.9cf25de3.chunk.js",
+    "main.js.map": "/p11-kasa-react/static/js/main.9cf25de3.chunk.js.map",
     "runtime-main.js": "/p11-kasa-react/static/js/runtime-main.b32b0db4.js",
     "runtime-main.js.map": "/p11-kasa-react/static/js/runtime-main.b32b0db4.js.map",
-    "static/js/2.565cdc64.chunk.js": "/p11-kasa-react/static/js/2.565cdc64.chunk.js",
-    "static/js/2.565cdc64.chunk.js.map": "/p11-kasa-react/static/js/2.565cdc64.chunk.js.map",
+    "static/js/2.cd253a4d.chunk.js": "/p11-kasa-react/static/js/2.cd253a4d.chunk.js",
+    "static/js/2.cd253a4d.chunk.js.map": "/p11-kasa-react/static/js/2.cd253a4d.chunk.js.map",
     "index.html": "/p11-kasa-react/index.html",
-    "static/css/main.8066245b.chunk.css.map": "/p11-kasa-react/static/css/main.8066245b.chunk.css.map",
-    "static/js/2.565cdc64.chunk.js.LICENSE.txt": "/p11-kasa-react/static/js/2.565cdc64.chunk.js.LICENSE.txt",
+    "static/css/main.7afae875.chunk.css.map": "/p11-kasa-react/static/css/main.7afae875.chunk.css.map",
+    "static/js/2.cd253a4d.chunk.js.LICENSE.txt": "/p11-kasa-react/static/js/2.cd253a4d.chunk.js.LICENSE.txt",
     "static/media/apropos.48994d58.png": "/p11-kasa-react/static/media/apropos.48994d58.png",
-    "static/media/arrow-down.9c100a72.svg": "/p11-kasa-react/static/media/arrow-down.9c100a72.svg",
     "static/media/arrow-left.d139c16e.svg": "/p11-kasa-react/static/media/arrow-left.d139c16e.svg",
     "static/media/arrow-right.a49133b4.svg": "/p11-kasa-react/static/media/arrow-right.a49133b4.svg",
-    "static/media/arrow-up.8a9b086e.svg": "/p11-kasa-react/static/media/arrow-up.8a9b086e.svg",
     "static/media/bandeau.09ec05db.png": "/p11-kasa-react/static/media/bandeau.09ec05db.png",
     "static/media/lelogo.ac38b36e.svg": "/p11-kasa-react/static/media/lelogo.ac38b36e.svg",
     "static/media/lelogob.a8b04259.svg": "/p11-kasa-react/static/media/lelogob.a8b04259.svg",
@@ -23,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b32b0db4.js",
-    "static/js/2.565cdc64.chunk.js",
-    "static/css/main.8066245b.chunk.css",
-    "static/js/main.8f71b31c.chunk.js"
+    "static/js/2.cd253a4d.chunk.js",
+    "static/css/main.7afae875.chunk.css",
+    "static/js/main.9cf25de3.chunk.js"
   ]
 }
