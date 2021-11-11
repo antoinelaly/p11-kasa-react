@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/p11-kasa-react/static/css/main.7afae875.chunk.css",
-    "main.js": "/p11-kasa-react/static/js/main.cf069e0d.chunk.js",
-    "main.js.map": "/p11-kasa-react/static/js/main.cf069e0d.chunk.js.map",
+    "main.css": "/p11-kasa-react/static/css/main.cabcbb8a.chunk.css",
+    "main.js": "/p11-kasa-react/static/js/main.8788eae8.chunk.js",
+    "main.js.map": "/p11-kasa-react/static/js/main.8788eae8.chunk.js.map",
     "runtime-main.js": "/p11-kasa-react/static/js/runtime-main.b32b0db4.js",
     "runtime-main.js.map": "/p11-kasa-react/static/js/runtime-main.b32b0db4.js.map",
     "static/js/2.77b773be.chunk.js": "/p11-kasa-react/static/js/2.77b773be.chunk.js",
     "static/js/2.77b773be.chunk.js.map": "/p11-kasa-react/static/js/2.77b773be.chunk.js.map",
     "index.html": "/p11-kasa-react/index.html",
-    "static/css/main.7afae875.chunk.css.map": "/p11-kasa-react/static/css/main.7afae875.chunk.css.map",
+    "static/css/main.cabcbb8a.chunk.css.map": "/p11-kasa-react/static/css/main.cabcbb8a.chunk.css.map",
     "static/js/2.77b773be.chunk.js.LICENSE.txt": "/p11-kasa-react/static/js/2.77b773be.chunk.js.LICENSE.txt",
     "static/media/apropos.48994d58.png": "/p11-kasa-react/static/media/apropos.48994d58.png",
     "static/media/arrow-left.d139c16e.svg": "/p11-kasa-react/static/media/arrow-left.d139c16e.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.b32b0db4.js",
     "static/js/2.77b773be.chunk.js",
-    "static/css/main.7afae875.chunk.css",
-    "static/js/main.cf069e0d.chunk.js"
+    "static/css/main.cabcbb8a.chunk.css",
+    "static/js/main.8788eae8.chunk.js"
   ]
 }
