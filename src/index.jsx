@@ -4,7 +4,6 @@ import { BrowserRouter as HashRouter, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 import Apropos from './pages/Apropos'
 import Logement from './pages/Logement'
-import Kasa from './pages/Kasa'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
@@ -42,7 +41,6 @@ ReactDOM.render(
         <Route path="/logement/:id"
         render={(props) => <Logement {...props} />}
         />
-        <Route path="/p11-kasa-react"  component={Kasa} />
         <Route path="*" component={Error} />
       </Switch>
       <Footer />
