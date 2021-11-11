@@ -49,7 +49,11 @@ class Footer extends Component {
         </Link>
         <div>
           <RightsSubtitle to="/">© Kasa. All rights reserved</RightsSubtitle>
+          
         </div>
+        <Link to="/sdfghj/">
+        <RightsSubtitle>404</RightsSubtitle>
+        </Link>
       </NavContainer>
     )
   }
