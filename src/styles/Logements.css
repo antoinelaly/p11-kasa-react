@@ -86,7 +86,7 @@
 }
 
 @media (max-width: 767px) {
-  .content-container { display: block;padding: 0 30px;}
+  .content-container { display: block;width: 82%;margin: 20px;}
   .content-desc, .content-equi { width: 100%; }
   .right-container { display: flex;flex-direction: row-reverse; }
   .ch-etoile { width: 15px;height: 15px;margin: 2.5px;  }
@@ -98,6 +98,7 @@
   .content-container h3 { font-size: 14px; }
   .slide span {padding-top: 220px; }
   .each-tags {font-size: 10px;border-radius: 5px; }
+  .slider { height: 100px;padding: 20px;}
 }
 
 input {
