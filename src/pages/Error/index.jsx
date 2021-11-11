@@ -18,6 +18,9 @@ const ErrorTitle = styled.h1`
   color: #FF6060;
   font-weight: 700;
   margin: 0;
+  @media (max-width: 767px) {
+    font-size: 188px;
+}
 `
 
 const ErrorSubtitle = styled.h2`
