@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/p11-kasa-react/static/css/main.7afae875.chunk.css",
-    "main.js": "/p11-kasa-react/static/js/main.46ce9ff2.chunk.js",
-    "main.js.map": "/p11-kasa-react/static/js/main.46ce9ff2.chunk.js.map",
+    "main.js": "/p11-kasa-react/static/js/main.f3ced056.chunk.js",
+    "main.js.map": "/p11-kasa-react/static/js/main.f3ced056.chunk.js.map",
     "runtime-main.js": "/p11-kasa-react/static/js/runtime-main.b32b0db4.js",
     "runtime-main.js.map": "/p11-kasa-react/static/js/runtime-main.b32b0db4.js.map",
     "static/js/2.65b8dd2b.chunk.js": "/p11-kasa-react/static/js/2.65b8dd2b.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.b32b0db4.js",
     "static/js/2.65b8dd2b.chunk.js",
     "static/css/main.7afae875.chunk.css",
-    "static/js/main.46ce9ff2.chunk.js"
+    "static/js/main.f3ced056.chunk.js"
   ]
 }
