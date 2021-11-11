@@ -37,21 +37,13 @@ ReactDOM.render(
       <GlobalStyle />
       <Header />
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/apropos">
-          <Apropos />
-        </Route>
+        <Route exact path="/"  component={Home} />
+        <Route path="/apropos"  component={Apropos} />
         <Route path="/logement/:id"
         render={(props) => <Logement {...props} />}
         />
-        <Route path="/p11-kasa-react">
-          <Kasa />
-        </Route>
-        <Route path="*">
-          <Error />
-        </Route>
+        <Route path="/p11-kasa-react"  component={Kasa} />
+        <Route path="*" component={Error} />
       </Switch>
       <Footer />
     </HashRouter>
