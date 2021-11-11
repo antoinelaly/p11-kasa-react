@@ -26,5 +26,5 @@ a {
     .h1bandeau {font-size: 24px;padding-right: 20%;padding-left: 10%;
     font-weight: 500;line-height: 34px;top: 20%;}
     .layer {  border-radius: 10px; }
-    .container { padding: 5%;width: 85%;}
+    .container { padding: 5%;}
 }

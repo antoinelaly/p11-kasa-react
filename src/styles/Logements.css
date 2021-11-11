@@ -86,7 +86,7 @@
 }
 
 @media (max-width: 767px) {
-  .content-container { display: block;width: 82%;margin: 20px;}
+  .content-container { display: block;width: 90%;margin: 20px;}
   .content-desc, .content-equi { width: 100%; }
   .right-container { display: flex;flex-direction: row-reverse; }
   .ch-etoile { width: 15px;height: 15px;margin: 2.5px;  }

@@ -46,7 +46,7 @@
   }
 
   @media (max-width: 767px) {
-    .slider__slide { width: 85%; }
+    .slider__slide { width: 90%; }
     .rightArrow, .leftArrow { padding-top: 20px; }
     .rightArrow { left: 5%;}
   }
