@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as HashRouter, Route, Switch } from 'react-router-dom'
-import Home from '../../npm run buildpages/Home'
+import Home from '../../pages/Home'
 import Apropos from '../../pages/Apropos'
 import Logement from '../../pages/Logement'
 import Header from '../Header'
