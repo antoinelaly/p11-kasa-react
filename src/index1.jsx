@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as HashRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 import Apropos from './pages/Apropos'
 import Logement from './pages/Logement'
@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter  basename={process.env.PUBLIC_URL}>
+    <Router>
       <GlobalStyle />
       <Header />
       <Switch>
@@ -54,7 +54,7 @@ ReactDOM.render(
         </Route>
       </Switch>
       <Footer />
-    </HashRouter>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 )
