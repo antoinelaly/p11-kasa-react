@@ -42,7 +42,9 @@ const CardsContainer = styled.div`
 }
 `
 /*
-* styled-components
+* @classdesc loop in logements.json to render card throw Card component 
+* Link to page with id in URL 
+* @param { Array.<String|Number> } logements
 */
 
 class Home extends Component {

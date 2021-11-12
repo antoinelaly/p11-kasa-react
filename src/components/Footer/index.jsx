@@ -32,6 +32,11 @@ const RightsSubtitle = styled.h4`
     font-size: 12px;
 }
 `
+/**
+* props: import LeLogo to defaultProps lelogo
+* @classdesc component to render the footer 
+* @param { String } lelogob
+ */
 
 class Footer extends Component {
   constructor(props) {

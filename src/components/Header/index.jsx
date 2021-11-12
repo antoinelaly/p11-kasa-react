@@ -24,6 +24,11 @@ const NavContainer = styled.nav`
   text-transform: uppercase;
 `
 
+/*
+* @classdesc render the header 
+* @param { String } LeLogo
+*/
+
   class Header extends Component {
     constructor(props) {
       super(props)

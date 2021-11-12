@@ -10,7 +10,7 @@ import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 
 /* 
 * match : {id} = props.match.params
-* useState : setState
+* useState / setState
 */
 
 class Logement extends Component {

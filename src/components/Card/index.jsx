@@ -45,7 +45,9 @@ const CardWrapper = styled.div`
 }
 `
 /*
-* function / class
+* @classdesc component to render cards 
+* @param { String } cover
+* @param { String } label
 */
 
 class Card extends Component {
@@ -69,7 +71,7 @@ class Card extends Component {
 
 Card.propTypes = {
   label: PropTypes.string.isRequired,
-  picture: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
 }
 
 Card.defaultProps = {

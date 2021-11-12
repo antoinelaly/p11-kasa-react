@@ -1,5 +1,11 @@
 import { Component } from 'react'
 
+/*
+* @classdesc render the slider
+* props background/slideStyle & active
+* 
+*/
+
 class Slide extends Component {
 
 

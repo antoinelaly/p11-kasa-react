@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import { Component } from 'react'
 
 /*
-* the children prop method
+* @classdesc component to render Banner  
+* @param { String } children
 */
 
 class Banner extends Component {

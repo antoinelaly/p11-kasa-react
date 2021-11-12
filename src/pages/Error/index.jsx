@@ -30,7 +30,7 @@ const ErrorSubtitle = styled.h2`
 `
 
 /*
-* StyledLink
+*  @classdesc render 404 page
 */
 
   class Error extends Component {

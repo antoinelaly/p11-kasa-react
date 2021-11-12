@@ -23,8 +23,8 @@ const Banner = styled.div`
 `
 
 /* 
-* match : {id} = props.match.params
-* css
+* @description Collapsibles/Accordion simple html css method with input checkbox
+* 
 */
 
 
