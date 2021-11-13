@@ -48,6 +48,7 @@ const CardWrapper = styled.div`
 * @classdesc component to render cards 
 * @param { String } cover
 * @param { String } label
+* PropTypes : sécuriser le type des props que reçoi le composant
 */
 
 class Card extends Component {

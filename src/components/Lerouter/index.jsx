@@ -18,8 +18,9 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 /*
-* @classdesc give a path to pages
-* <Route path="/logement/:id" render={(props) => <Logement {...props} />} /> ????
+* @classdesc arborescence de composants
+* spread routeProps to make them available rendered Component
+* spread operator ...array or iterable, expands the array into individual elements
 */
 
 class Lerouter extends Component {

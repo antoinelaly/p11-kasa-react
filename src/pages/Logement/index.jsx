@@ -9,8 +9,11 @@ import { ReactComponent as ArrowLeft } from '../../assets/arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 
 /* 
-* match : {id} = props.match.params
-* useState / setState
+* @classdesc 
+* {id} = props.match.params : from router / Home
+* interaction : function useState / class setState
+* activeSlide: this.state 0 & prevSlide -1 & nextSlide +1
+* props key : allow reactjs to move elements individually (like compression)
 */
 
 class Logement extends Component {
@@ -22,10 +25,12 @@ class Logement extends Component {
     }
 
     render() {
+        // id dans l'url du lien de card sur la home au travers (props) de router
         const { id } = this.props.match.params
+        // la méthode find renvoie l'objet logement / id
     const logement = logements.find(logement => logement.id === id)
     let {title, rating, description, pictures, location, tags, host, equipments} = logement
-
+    // opérateur conditionnel, (ternaire) raccourci pour la déclaration de Instructions/if...else
     const  prevSlide = () => {
         let slide = this.state.activeSlide - 1 < 0
           ? pictures.length - 1

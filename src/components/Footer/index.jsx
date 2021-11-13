@@ -36,6 +36,7 @@ const RightsSubtitle = styled.h4`
 * props: import LeLogo to defaultProps lelogo
 * @classdesc component to render the footer 
 * @param { String } lelogob
+* PropTypes : sécuriser le type des props que reçoi le composant
  */
 
 class Footer extends Component {

@@ -45,6 +45,8 @@ const CardsContainer = styled.div`
 * @classdesc loop in logements.json to render card throw Card component 
 * Link to page with id in URL 
 * @param { Array.<String|Number> } logements
+* props key : allow reactjs to move elements individually (like compression)
+* styled components avec integration de l'image bandeau
 */
 
 class Home extends Component {

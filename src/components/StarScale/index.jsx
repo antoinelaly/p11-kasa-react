@@ -3,9 +3,9 @@ import StarG from '../../assets/star-g.svg'
 import { Component } from 'react'
 
 /* 
-* Map method: loop to iterate over the elements, transform each individual one, and push the results into a new array
-* operator ternary conditional: The condition is an expression that evaluates to a Boolean value, either true or false
-* Get the state (starValue) frome Logement component loop in range until the value and send back stars throw StarScale
+* Map method: loop to iterate over the elements and a new array
+* L'opérateur conditionnel,(ternaire) raccourci pour la déclaration de Instructions/if...else
+* starValue props (Logement) loop in range until the value and send back stars
 */
 
 class StarScale extends Component {
