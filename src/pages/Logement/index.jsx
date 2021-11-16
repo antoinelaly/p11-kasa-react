@@ -1,7 +1,7 @@
-//import React, { useState } from 'react';
 import { Component } from 'react'
 import logements from '../../datas/logements.json';
 import StarScale from '../../components/StarScale';
+import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
 import Slide from '../../components/Slide';
 import '../../styles/Logements.css';
 import '../../styles/slider.css';
@@ -21,15 +21,18 @@ class Logement extends Component {
         super(props)
         this.state = { 
             activeSlide: 0 
+            // state initiale 
         };
     }
 
     render() {
+        
         // id dans l'url du lien de card sur la home au travers (props) de router
         const { id } = this.props.match.params
         // la méthode find renvoie l'objet logement / id
     const logement = logements.find(logement => logement.id === id)
     let {title, rating, description, pictures, location, tags, host, equipments} = logement
+    
     // opérateur conditionnel, (ternaire) raccourci pour la déclaration de Instructions/if...else
     const  prevSlide = () => {
         let slide = this.state.activeSlide - 1 < 0
@@ -39,6 +42,12 @@ class Logement extends Component {
           activeSlide: slide
         });
       }
+      //console.log("slide", this.state.activeSlide);
+      // this.state état courrant 
+      // setState: méthode de la classe Logement
+      // ce qui est dans le render  est exécuté à chaque fois qu'une prop, ou que le state, est mis à jour
+      // cette méthode est appelée dans onClick de ArrowLeft & ArrowRight
+      // chaque fois qu'un setState  est effectué, cela va déclencher un nouveau render  de notre composant
       const   nextSlide = () => {
         let slide = this.state.activeSlide + 1 < pictures.length
           ? this.state.activeSlide + 1
@@ -47,9 +56,11 @@ class Logement extends Component {
           activeSlide: slide
         });
       }
-
+      
         return (
+            
             <div className=''>
+                <ScrollToTopOnMount />
                 <section className="slider">
                 <div>
  
@@ -62,12 +73,13 @@ class Logement extends Component {
               />
             );
           })}
-
+          
         <ArrowLeft className="rightArrow" onClick={prevSlide}/>
         <ArrowRight className="leftArrow" onClick={nextSlide}/>
       </div>
 
                 </section>
+                
                 <div className="content-container">
                     <div className="left-container">
                         <h1>{title}</h1>
@@ -117,6 +129,6 @@ class Logement extends Component {
             </div>
         );
     };
-}
+} 
 
 export default Logement;

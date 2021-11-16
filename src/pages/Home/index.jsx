@@ -56,7 +56,7 @@ class Home extends Component {
   }
 
   render() {
-
+// <Link> restitue un <a> avec un vrai href
     return (
       <div className="container">
         <Banner>

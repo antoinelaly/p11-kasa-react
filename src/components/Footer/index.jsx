@@ -47,7 +47,7 @@ class Footer extends Component {
 
   render() {
     const { lelogob } = this.props
-
+// <Link> restitue un <a> avec un vrai href
     return (
       <NavContainer>
         <Link to="/">

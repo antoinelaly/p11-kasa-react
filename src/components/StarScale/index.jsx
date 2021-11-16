@@ -16,6 +16,8 @@ class StarScale extends Component {
       
         render() {
         const { starValue } = this.props
+        //console.log("starValue", starValue);
+        // starValue ex 4 boucle 4 fois 
         const range = [1, 2, 3, 4, 5]
         const starRed = <img src={Star} alt='star-icon' className="ch-etoile"/>
         const starGrey = <img src={StarG} alt='star-icon'  className="ch-etoile"/>
