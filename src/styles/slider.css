@@ -25,6 +25,7 @@
   .rightArrow:hover {
     color: rgba(160, 192, 255, 1);
     transform: scale(1.1);
+    cursor: pointer;
   }
   .leftArrow {
     padding-top: 180px;
@@ -37,6 +38,7 @@
   .leftArrow:hover {
     color: rgba(160, 192, 255, 0.8);
     transform: scale(1.1);
+    cursor: pointer;
   }
   #slide {
     position: relative;

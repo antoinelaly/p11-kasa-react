@@ -46,28 +46,33 @@ class Logement extends Component {
           activeSlide: slide
         });
       }
+
       
-        return (
-            
-            <div className=''>
-                <ScrollToTopOnMount />
-                <section className="slider">
-                <div>
- 
-                {pictures.map((slide, index, array) => {
+      
+    return (
+        
+        <div className=''>
+            <ScrollToTopOnMount />
+            <section className="slider">
+            <div>
+
+            {pictures.map((slide, index, array) => {
             return (
-              <Slide key={`pictures-${index}`}
+                <Slide 
+                key={`pictures-${index}`}
                 background={slide}
                 active={index === this.state.activeSlide}
-              />
+                />
             );
-          })}
-          
-        <ArrowLeft className="rightArrow" onClick={prevSlide}/>
-        <ArrowRight className="leftArrow" onClick={nextSlide}/>
-      </div>
+            })}
 
-                </section>
+          {pictures.length > 1 ? <ArrowLeft className="rightArrow" onClick={prevSlide}/> : null}
+          {pictures.length > 1 ? <ArrowRight className="leftArrow" onClick={nextSlide}/> : null}
+        
+        
+
+        </div>
+        </section>
                 
                 <div className="content-container">
                     <div className="left-container" >
