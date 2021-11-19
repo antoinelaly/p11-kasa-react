@@ -9,11 +9,10 @@ import { ReactComponent as ArrowLeft } from '../../assets/arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 
 /* 
-* @classdesc 
 * {id} = props.match.params : from router / Home
-* interaction : function useState / class setState
-* activeSlide: this.state 0 & prevSlide -1 & nextSlide +1
-* props key : allow reactjs to move elements individually (like compression)
+* activeSlide: this.state 0 // state initiale 
+* this.setState > déclenche un nouveau render du composant
+* find in logements.json the props id and fill out elements
 */
 
 class Logement extends Component {
@@ -21,19 +20,15 @@ class Logement extends Component {
         super(props)
         this.state = { 
             activeSlide: 0 
-            // state initiale 
         };
     }
 
     render() {
         
-        // id dans l'url du lien de card sur la home au travers (props) de router
         const { id } = this.props.match.params
-        // la méthode find renvoie l'objet logement / id
     const logement = logements.find(logement => logement.id === id)
     let {title, rating, description, pictures, location, tags, host, equipments} = logement
-    
-    // opérateur conditionnel, (ternaire) raccourci pour la déclaration de Instructions/if...else
+
     const  prevSlide = () => {
         let slide = this.state.activeSlide - 1 < 0
           ? pictures.length - 1
@@ -42,12 +37,7 @@ class Logement extends Component {
           activeSlide: slide
         });
       }
-      //console.log("slide", this.state.activeSlide);
-      // this.state état courrant 
-      // setState: méthode de la classe Logement
-      // ce qui est dans le render  est exécuté à chaque fois qu'une prop, ou que le state, est mis à jour
-      // cette méthode est appelée dans onClick de ArrowLeft & ArrowRight
-      // chaque fois qu'un setState  est effectué, cela va déclencher un nouveau render  de notre composant
+
       const   nextSlide = () => {
         let slide = this.state.activeSlide + 1 < pictures.length
           ? this.state.activeSlide + 1
@@ -66,8 +56,7 @@ class Logement extends Component {
  
                 {pictures.map((slide, index, array) => {
             return (
-              <Slide
-              className="limage"
+              <Slide key={`pictures-${index}`}
                 background={slide}
                 active={index === this.state.activeSlide}
               />
@@ -81,23 +70,23 @@ class Logement extends Component {
                 </section>
                 
                 <div className="content-container">
-                    <div className="left-container">
-                        <h1>{title}</h1>
-                        <h3>{location}</h3>
+                    <div className="left-container" >
+                        <h1 key="titleId1">{title}</h1>
+                        <h3 key="locationId1">{location}</h3>
 
                         <div className="lestags">
                             {tags.map((tag, index)=> (
-                                <div className="each-tags" key={index}>{tag}
+                                <div className="each-tags" key={`tag-${index}`}>{tag}
                                 </div>
                             ))} 
                         </div>
                     </div>
                     <div className="right-container">
                         <div className="theface">
-                            <h3>{host.name}</h3>
-                            <img className="face-img" src={host.picture} alt="portrait"></img>
+                            <h3 key="nameId1">{host.name}</h3>
+                            <img className="face-img"  key="imageId1" src={host.picture} alt="portrait"></img>
                         </div>
-                        <StarScale  starValue={rating} />
+                        <StarScale  key="2" starValue={rating} />
                     </div>
                 </div>
 
@@ -105,21 +94,21 @@ class Logement extends Component {
                     <div className="tabs content-desc">
                         <div className="tab ">
                             <input type="checkbox" id="chck1" />
-                            <label className="tab-label" for="chck1"><h3>Description</h3></label>
+                            <label className="tab-label" htmlFor="chck1"><h3>Description</h3></label>
                             <div className="tab-content">
-                            <p>{description}</p>
+                            <p key="descriptionId1">{description}</p>
                             </div>
                         </div>
                     </div>
                     <div className="tabs content-equi">
                         <div className="tab">
                             <input type="checkbox" id="chck2" />
-                            <label className="tab-label" for="chck2"><h3>Equipments</h3></label>
+                            <label className="tab-label" htmlFor="chck2"><h3>Equipments</h3></label>
                             <div className="tab-content">
                             <ul>
                         {equipments.map((equipment, index)=> (
-                                <li className="each-equi" key={index}>{equipment}
-                                </li>
+                                <li className="each-equi" key={`equipment-${index}`}>{equipment}
+                                </li> 
                             ))} 
                             </ul>
                             </div>

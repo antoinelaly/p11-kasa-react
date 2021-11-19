@@ -1,13 +1,12 @@
 import { Component } from 'react'
 
 /*
-* @classdesc render the slider
-* props background/slideStyle & active
+* Logement: background={slide} => this.props.background 
+* html: data-active="false" / data-active="true"
 * 
 */
 
 class Slide extends Component {
-
 
     render() {
       let slideStyle = { backgroundImage: `url( ${this.props.background})` };

@@ -6,7 +6,7 @@ import bandeau from '../../assets/bandeau.png'
 import '../../styles/Banner.css'
 import logements from '../../datas/logements.json';
 
-const Banner = styled.div`
+const Bandeau = styled.div`
   background-image: url('${bandeau}');
   max-width: 1240px;
   height: 180px;
@@ -42,10 +42,6 @@ const CardsContainer = styled.div`
 }
 `
 /*
-* @classdesc loop in logements.json to render card throw Card component 
-* Link to page with id in URL 
-* @param { Array.<String|Number> } logements
-* props key : allow reactjs to move elements individually (like compression)
 * styled components avec integration de l'image bandeau
 */
 
@@ -56,14 +52,13 @@ class Home extends Component {
   }
 
   render() {
-// <Link> restitue un <a> avec un vrai href
     return (
       <div className="container">
-        <Banner>
+        <Bandeau>
           <div className="layer">
           <h1 className='h1bandeau'>Chez vous, partout et ailleurs</h1>
           </div>
-        </Banner>
+        </Bandeau>
         <CardsContainer>
           {logements.map((profile) => (
             <Link key={`kasa-${profile.id}`} to={`/logement/${profile.id}`}>

@@ -24,9 +24,7 @@ const Banner = styled.div`
 
 /* 
 * @description Collapsibles/Accordion simple html css method with input checkbox
-* 
 */
-
 
 class Logement extends Component {
     constructor(props) {
@@ -47,7 +45,7 @@ class Logement extends Component {
                     <div className="tabs content-app">
                         <div className="tab">
                             <input type="checkbox" id="chck1" />
-                            <label className="tab-label-app" for="chck1"><h3>Fiabilité</h3></label>
+                            <label className="tab-label-app" htmlFor="chck1"><h3>Fiabilité</h3></label>
                             <div className="fiabilite">
                             <p>Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium. Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.</p>
                             </div>
@@ -56,7 +54,7 @@ class Logement extends Component {
                     <div className="tabs content-app">
                         <div className="tab">
                             <input type="checkbox" id="chck2" />
-                            <label className="tab-label-app" for="chck2"><h3>Respect</h3></label>
+                            <label className="tab-label-app" htmlFor="chck2"><h3>Respect</h3></label>
                             <div className="respect">
                             <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation entraînera une exclusion de notre plateforme.</p>
                             </div>
@@ -65,7 +63,7 @@ class Logement extends Component {
                     <div className="tabs content-app">
                         <div className="tab">
                             <input type="checkbox" id="chck3" />
-                            <label className="tab-label-app" for="chck3"><h3>Service</h3></label>
+                            <label className="tab-label-app" htmlFor="chck3"><h3>Service</h3></label>
                             <div className="respect">
                             <p>Aperiam ab atque incidunt dolores ullam est, earum ipsa recusandae velit cumque. Aperiam ab atque incidunt dolores ullam est, earum ipsa recusandae velit cumque.</p>
                             </div>
@@ -74,7 +72,7 @@ class Logement extends Component {
                     <div className="tabs content-app">
                         <div className="tab">
                             <input type="checkbox" id="chck4" />
-                            <label className="tab-label-app" for="chck4"><h3>Responsabilité</h3></label>
+                            <label className="tab-label-app" htmlFor="chck4"><h3>Responsabilité</h3></label>
                             <div className="respect">
                             <p>Blanditiis aliquid adipisci quisquam reiciendis voluptates itaque.</p>
                             </div>

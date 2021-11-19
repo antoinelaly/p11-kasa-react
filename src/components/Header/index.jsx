@@ -25,8 +25,6 @@ const NavContainer = styled.nav`
 `
 
 /*
-* @classdesc render the header 
-* @param { String } LeLogo
 * <Link> restitue un <a> avec un vrai href
 * <NavLink> peut se définir comme "actif" lorsque sa prop correspond à l'emplacement actuel.
 */

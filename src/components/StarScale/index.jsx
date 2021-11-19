@@ -3,9 +3,7 @@ import StarG from '../../assets/star-g.svg'
 import { Component } from 'react'
 
 /* 
-* Map method: loop to iterate over the elements and a new array
-* L'opérateur conditionnel,(ternaire) raccourci pour la déclaration de Instructions/if...else
-* starValue props (Logement) loop in range until the value and send back stars
+* Logement<StarScale  starValue={rating} />  =>  starValue >= rangeElem ?
 */
 
 class StarScale extends Component {
@@ -16,8 +14,7 @@ class StarScale extends Component {
       
         render() {
         const { starValue } = this.props
-        //console.log("starValue", starValue);
-        // starValue ex 4 boucle 4 fois 
+
         const range = [1, 2, 3, 4, 5]
         const starRed = <img src={Star} alt='star-icon' className="ch-etoile"/>
         const starGrey = <img src={StarG} alt='star-icon'  className="ch-etoile"/>

@@ -18,10 +18,6 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 /*
-* @classdesc arborescence de composants
-* spread routeProps to make them available rendered Component
-* spread operator ...array or iterable, expands the array into individual elements
-* La route charge le composant
 * HashRouter: small client side applications / Github
 * Switch: mettre les <Route> avec des chemins plus spécifiques (généralement plus longs) avant les moins spécifiques.
 */

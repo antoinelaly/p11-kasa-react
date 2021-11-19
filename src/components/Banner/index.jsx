@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import { Component } from 'react'
 
 /*
-* @classdesc component to render Banner  
-* @param { String } children
-* PropTypes : sécuriser le type des props que reçoi le composant
+* props children est utile lorsqu'un composant ne connaît pas ses enfants à l'avance
 */
 
 class Banner extends Component {
@@ -14,15 +12,12 @@ class Banner extends Component {
 	  this.state = {}
 	}
 
-  	// props, récuperation de valeurs dans le composant parent enfant 
-	// children est utile lorsqu'un composant ne connaît pas ses enfants à l'avance
 	render() {
 	  const { children } = this.props
 
 	return <div className='bandeau'>{children}</div>
 	}
 }
-
 
 Banner.propTypes = {
 	children: PropTypes.string.isRequired,

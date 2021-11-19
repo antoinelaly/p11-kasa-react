@@ -33,11 +33,9 @@ const RightsSubtitle = styled.h4`
 }
 `
 /**
-* props: import LeLogo to defaultProps lelogo
-* @classdesc component to render the footer 
 * @param { String } lelogob
 * PropTypes : sécuriser le type des props que reçoi le composant
- */
+*/
 
 class Footer extends Component {
   constructor(props) {
@@ -47,7 +45,6 @@ class Footer extends Component {
 
   render() {
     const { lelogob } = this.props
-// <Link> restitue un <a> avec un vrai href
     return (
       <NavContainer>
         <Link to="/">
